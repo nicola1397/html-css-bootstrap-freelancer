@@ -1,0 +1,54 @@
+a {
+  text-decoration: none;
+}
+
+:root {
+  --greenbg: #1abc9c;
+  --darkbg: #2c3d50;
+}
+
+/* DEBUG */
+
+.debug {
+  border: 2px solid red;
+}
+/* END DEBUG */
+
+header {
+  background-color: var(--darkbg);
+}
+
+.row {
+  height: 90px;
+}
+
+#jumbo img {
+  height: 300px;
+}
+
+#jumbo {
+  background-color: var(--greenbg);
+}
+
+/* PORTFOLIO */
+
+#porfolio .row div {
+  height: 300px;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+/* ABOUT */
+
+#about {
+  background-color: var(--greenbg);
+}
+
+/* CONTACT */
+
+/* FOOTER */
+footer {
+  background-color: var(--darkbg);
+}
