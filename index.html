@@ -22,20 +22,29 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- BODY -->
   <body>
+    <!-- HEADER -->
     <header>
       <nav class="container-md">
-        <div class="row align-items-center">
-          <div class="col">
-            <h2 class="text-uppercase text-white">start bootstrap</h2>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-5 flex-grow-1">
+            <h2 class="text-uppercase text-white fs-1">start bootstrap</h2>
           </div>
-
-          <div class="col">
-            <div class="big-nav">
-              <a href="#" class="text-white text-uppercase fs-4">portfolio</a>
-              <a href="#" class="text-white text-uppercase fs-4">about</a>
-              <a href="#" class="text-white text-uppercase fs-4">contact</a>
-            </div>
+          <!-- BURGER MENU SMARTPHONE -->
+          <div class="col-1">
+            <button class="burger-menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <!-- NAV DESKTOP -->
+        <div class="col big-nav">
+          <div>
+            <a href="#" class="text-white text-uppercase fs-4">portfolio</a>
+            <a href="#" class="text-white text-uppercase fs-4">about</a>
+            <a href="#" class="text-white text-uppercase fs-4">contact</a>
           </div>
         </div>
       </nav>
@@ -43,87 +52,165 @@
 
     <!-- MAIN CONTENT -->
     <main>
-      <section id="jumbo" class="text-center">
+      <section id="jumbo" class="text-center p-5">
         <img src="./img/avatar.svg" alt="" />
-        <h1 class="text-uppercase text-white">start bootstrap</h1>
-        <div></div>
+        <h1 class="text-uppercase display-3 fw-semibold">start bootstrap</h1>
+        <!-- STAR CONTAINER -->
+        <div class="container">
+          <div class="row align-items-center star justify-content-center">
+            <div class="col-2 line"></div>
+            <div class="col flex-grow-0 text-center">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="col-2 line"></div>
+          </div>
+        </div>
         <h2 class="text-uppercase text-white">
           graphic artist - web designer - illustrator
         </h2>
       </section>
 
+      <!-- PORTFOLIO -->
       <section id="portfolio">
-        <h2 class="text-uppercase text-white">portfolio</h2>
-        <div></div>
+        <h2 class="text-uppercase display-5 fw-semibold text-center">
+          portfolio
+        </h2>
+        <!-- STAR CONTAINER -->
+        <div class="container">
+          <div class="row align-items-center star justify-content-center">
+            <div class="col-2 line"></div>
+            <div class="col flex-grow-0 text-center">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="col-2 line"></div>
+          </div>
+        </div>
+        <!-- CONTAINER -->
         <div class="container-md">
           <div class="row g-5">
+            <!-- CONTENT -->
             <div class="col-md-6 col-lg-4">
-              <img src="./img/cabin.png" alt="" />
+              <img src="./img/cabin.png" alt="" class="rounded-4" />
             </div>
             <div class="col-md-6 col-lg-4">
-              <img src="./img/cake.png" alt="" />
+              <img src="./img/cake.png" alt="" class="rounded-4" />
             </div>
             <div class="col-md-6 col-lg-4">
-              <img src="./img/circus.png" alt="" />
+              <img src="./img/circus.png" alt="" class="rounded-4" />
             </div>
             <div class="col-md-6 col-lg-4">
-              <img src="./img/game.png" alt="" />
+              <img src="./img/game.png" alt="" class="rounded-4" />
             </div>
             <div class="col-md-6 col-lg-4">
-              <img src="./img/safe.png" alt="" />
+              <img src="./img/safe.png" alt="" class="rounded-4" />
             </div>
             <div class="col-md-6 col-lg-4">
-              <img src="./img/submarine.png" alt="" />
+              <img src="./img/submarine.png" alt="" class="rounded-4" />
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about">
-        <h2 class="text-uppercase text-white">about</h2>
-        <div></div>
+        <h2 class="text-uppercase display-5 fw-semibold text-center">about</h2>
+        <!-- STAR CONTAINER -->
+        <div class="container">
+          <div class="row align-items-center star justify-content-center">
+            <div class="col-2 line"></div>
+            <div class="col flex-grow-0 text-center">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="col-2 line"></div>
+          </div>
+        </div>
+
+        <!-- CONTAINER -->
         <div class="container-md">
-          <div class="row g-5">
+          <div class="row g-5 align-items-center">
+            <!-- CONTENT -->
             <div class="col-md-6">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-                ullam voluptates facere dignissimos, quaerat dolorem a labore
-                illum, placeat modi quae necessitatibus sapiente amet dolorum
-                sequi molestiae neque cumque quam!
+                Freelancer is a free bootstrap theme created by Start Bootstrap.
+                The download includes the complete source files including HTML,
+                CSS, and JavaScript as well as optional LESS stylesheets for
+                easy customization.
               </p>
             </div>
             <div class="col-md-6">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-                ullam voluptates facere dignissimos, quaerat dolorem a labore
-                illum, placeat modi quae necessitatibus sapiente amet dolorum
-                sequi molestiae neque cumque quam!
+                Whether you're a student looking to showcase your work, a
+                professional looking to attract clients, or a graphic artist
+                looking to share your projects, this template is the perfect
+                starting point!
               </p>
             </div>
+            <button>Download</button>
           </div>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact">
-        <h2 class="text-uppercase text-white">contact</h2>
-        <div></div>
+        <h2 class="text-uppercase display-5 fw-semibold text-center">
+          contact
+        </h2>
+        <!-- STAR CONTAINER -->
+        <div class="container-md">
+          <div class="row align-items-center star justify-content-center">
+            <div class="col-2 line"></div>
+            <div class="col flex-grow-0 text-center">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="col-2 line"></div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div class="container-md">
         <div class="row">
           <div class="col-md-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-            nihil.
+            <h2 class="text-uppercase display-5 fw-semibold text-center">
+              location
+            </h2>
+            <p>2215 John Daniel Drive Clark, MO 54243</p>
           </div>
           <div class="col-md-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-            nihil.
+            <h2 class="text-uppercase display-5 fw-semibold text-center">
+              around the web
+            </h2>
+            <div class="container-md">
+              <div class="row justify-content-around g-2">
+                <div class="col-2 text-center social">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+                <div class="col-2 text-center social">
+                  <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                </div>
+
+                <div class="col-2 text-center social">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div class="col-2 text-center social">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-            nihil.
+            <h2 class="text-uppercase display-5 fw-semibold text-center">
+              ABOUT FREELANCER
+            </h2>
+
+            <p>
+              Freelance is a free to use, open source Bootstrap theme created by
+              <a href="#">Start Bootstrap.</a>
+            </p>
           </div>
         </div>
       </div>

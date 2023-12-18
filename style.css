@@ -7,34 +7,86 @@ a {
   --darkbg: #2c3d50;
 }
 
+body {
+  min-width: 524px;
+}
+
 /* DEBUG */
 
 .debug {
   border: 2px solid red;
 }
 /* END DEBUG */
+/* UTILS */
 
+/* DIVISORE STELLA */
+.line {
+  content: "";
+  height: 4px;
+}
+
+.fa-star {
+  font-size: 2rem;
+}
+
+section:nth-of-type(even) .star {
+  color: var(--darkbg);
+}
+
+section:nth-of-type(odd) .star {
+  color: white;
+}
+
+section:nth-of-type(even) .star .line {
+  background-color: var(--darkbg);
+}
+
+section:nth-of-type(odd) .star .line {
+  background-color: white;
+}
+
+/* SECTIONS BACKGROUNDS */
+
+section:nth-of-type(odd) {
+  background-color: var(--greenbg);
+  color: white;
+}
+
+section:nth-of-type(even) {
+  color: var(--darkbg);
+}
+
+/* HEADER */
 header {
   background-color: var(--darkbg);
 }
 
-.row {
+header nav {
   height: 90px;
+  line-height: 90px;
 }
+
+.big-nav {
+  display: none;
+}
+
+.burger-menu {
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* JUMBO */
 
 #jumbo img {
   height: 300px;
 }
 
-#jumbo {
-  background-color: var(--greenbg);
-}
-
 /* PORTFOLIO */
-
-#porfolio .row div {
-  height: 300px;
-}
 
 #portfolio img {
   width: 100%;
@@ -42,13 +94,18 @@ header {
 
 /* ABOUT */
 
-#about {
-  background-color: var(--greenbg);
-}
-
 /* CONTACT */
 
 /* FOOTER */
 footer {
   background-color: var(--darkbg);
+}
+
+footer .social {
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  color: white;
+  height: 50px;
+  width: 50px;
 }
