@@ -100,6 +100,10 @@ footer {
   color: white;
 }
 
+footer p a {
+  color: var(--greenbg);
+}
+
 footer .social {
   border-radius: 50%;
   border: 2px solid white;
